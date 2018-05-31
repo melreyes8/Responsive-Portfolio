@@ -6,6 +6,7 @@ html, body {
 }
 
 
+
 /* Standard for all pages */
 
 * {
@@ -26,12 +27,15 @@ html, body {
 header {
     background-color: #ffffff;
     height: 70px;
-
+    width: 100%;
+    overflow: visible;
 }
 
 .headercontainer {
     max-width: 960px;
+    width: 100%;
     margin: 0 auto;
+    clear: both;
 }
 
 .logo {
@@ -192,4 +196,49 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: gray;
+}
+
+/* Media Query - Desktop Layout */
+
+@media screen and (max-width: 980px) {
+    .page-wrap {
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .maincontent {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+
+
+/* Media Query - Tablet Layout */
+
+@media screen and (max-width: 768px) {
+    .page-wrap {
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .maincontent {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+
+/* Media Query - Cell Phone in Landscape Layout */
+
+@media screen and (max-width: 640px) {
+    .page-wrap {
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .maincontent {
+        width: 100%;
+        padding: 25px;
+    }
 }
